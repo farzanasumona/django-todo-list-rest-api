@@ -79,17 +79,13 @@ WSGI_APPLICATION = 'TodoListApi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydb',
+        'NAME': 'todo',
         'USER': 'myuser',
         'PASSWORD': 'mypassword',
         'HOST': 'db',
         'PORT': '5432',
-        'OPTIONS': {
-            'client_encoding': 'UTF8',
-            'sql_mode': 'traditional',
-            'sslmode': 'require',
-            'path': '/path/to/psql',
-        }
+
+
     }
 }
 
